@@ -1,0 +1,370 @@
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition-duration: 0.6s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+video:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  padding: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.6001751042213761) 54%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.nav-links {
+  margin-left: 200px;
+  transition-duration: 0.6s;
+}
+
+.nav-item {
+  display: inline-block;
+  font-size: 4rem;
+  margin: 10px;
+}
+
+.panel-btn {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.3);
+  transition-duration: 0.6s;
+}
+
+.panel-btn:hover {
+  color: white;
+}
+.panel {
+  padding: 20px 0px 0px 0px;
+  width: 33.33%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.panel-container {
+  height: 100vh;
+  width: 300%;
+}
+
+.panel h1 {
+  font-size: 100px;
+}
+
+.home-panel {
+  padding-top: 27vh;
+  margin-left: 0px;
+  transition-duration: 0.6s;
+}
+
+.landing-msg {
+  text-align: center;
+}
+
+.landing-msg h1 {
+  font-size: 10rem;
+  font-weight: normal;
+}
+
+.landing-msg p {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#shuffle-btn {
+  color: white;
+  font-size: 3rem;
+}
+
+#playlist-shuffle-btn {
+  color: white;
+}
+
+.shuffle-btn {
+  border-radius: 100px;
+  padding: 12px;
+  transition-duration: 0.6s;
+}
+.shuffle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.anime-list-container {
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+  margin-left: 14vh;
+  width: 90%;
+  height: 97vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-info {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.box-info h3 {
+  padding-top: 20%;
+}
+
+.box-info:hover {
+  transform: scale(1.07);
+  opacity: 1;
+}
+
+.songs-list {
+  margin-top: 5%;
+  margin-left: 10%;
+  height: 79vh;
+  overflow: auto;
+}
+
+.songs-list-playlist {
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+.song-list-item {
+  margin: 10px;
+  padding: 2px 50px;
+  cursor: pointer;
+  width: 80%;
+  transition-duration: 0.6s;
+}
+.song-list-item:hover {
+  transform: scale(1.05);
+}
+
+.song-list-item h3 span {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
+
+.song-list-item:hover h3 span {
+  opacity: 1;
+}
+.song-list-item h3 {
+  font-weight: normal;
+}
+.song-list-item h4 {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.song-list-item-icon {
+  opacity: 0;
+  transition-duration: 0.6s;
+}
+
+.song-list-item span {
+  margin: 10px;
+}
+
+.song-list-item-title {
+  font-size: 1.8rem;
+}
+
+.song-list-item-artist {
+  color: gray;
+  font-size: 1.5rem;
+  padding-left: 60px;
+}
+
+.player {
+  text-align: center;
+  width: 70%;
+  position: relative;
+}
+
+.video-player {
+  display: block;
+  margin: 0 auto;
+  width: 96vh;
+  height: 54vh;
+  border-radius: 8px;
+}
+
+.player h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.player p {
+  font-size: 1.4rem;
+  color: gray;
+}
+
+.control-icons {
+  color: rgba(255, 255, 255, 0.3);
+  transition-duration: 0.6s;
+}
+
+.control-icons:hover {
+  color: white;
+}
+
+#previous {
+  top: 27vh;
+  position: absolute;
+  left: 50px;
+  font-size: 3rem;
+}
+
+#next {
+  top: 27vh;
+  position: absolute;
+  right: 50px;
+  font-size: 3rem;
+}
+
+.playlist-shuffle-btn {
+  color: gray;
+  margin: 20px;
+}
+
+.playlist-shuffle-btn:hover {
+  color: white;
+}
+
+.player-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.tray {
+  padding-top: 20vh;
+  z-index: 1000000;
+  position: fixed;
+  height: 100vh;
+  width: 200%;
+  top: 80vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* backdrop-filter: blur(30px); */
+  transition-duration: 0.6s;
+}
+
+.tray-container {
+  z-index: 1000001;
+  width: 100%;
+  height: 10vh;
+  top: 80vh;
+  position: fixed;
+  text-align: center;
+  transition-duration: 0.6s;
+}
+
+#previous-button {
+  font-size: 3rem;
+  position: absolute;
+  top: 50px;
+  left: 13%;
+}
+
+#next-button {
+  font-size: 3rem;
+  position: absolute;
+  top: 50px;
+  right: 13%;
+}
+
+#expand-button {
+  font-size: 3rem;
+  position: absolute;
+  top: 50px;
+  right: 5%;
+}
+.song-title {
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+#video-player {
+  width: 112vh;
+  height: 63vh;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+}
+
+.anime-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.anime-container-cover {
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(3px);
+  width: 100%;
+  height: 100%;
+  padding: 5vh;
+}
+
+#back-icon {
+  position: absolute;
+  top: 6vh;
+  left: 6vh;
+}
+.anime-container h1 {
+  font-weight: normal;
+  margin-left: 9vh;
+}
+
+.video-container {
+  padding: 0vh 8vh 0vh 50vh;
+  transition-duration: 0.6s;
+}
+
+.player-btns {
+  padding-top: 20vh;
+}
+.player-btns button {
+  margin: 2vh;
+}
