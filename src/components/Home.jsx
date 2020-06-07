@@ -15,7 +15,6 @@ function Home(props) {
         <p>start listening</p>
         <button
           onClick={() => {
-            props.expand();
             props.shuffleList();
           }}
           className="btn shuffle-btn"

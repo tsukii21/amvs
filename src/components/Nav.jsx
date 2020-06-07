@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Nav(props) {
   function slideToHome() {
@@ -47,6 +48,9 @@ function Nav(props) {
           </button>
         </div>
       </div>
+      <Link to="/search">
+        <span class="material-icons search-icon">search</span>
+      </Link>
     </nav>
   );
 }

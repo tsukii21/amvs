@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Nav from "./Nav";
 import Main from "./Main";
-import Player from "./Player";
+import Anime from "./Anime";
 import Video from "./Video";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import songs from "../data/songs";
 import { shuffle } from "shufflr";
+import Search from "./Search";
 
 function App() {
   const [isExpanded, setExpanded] = useState(false);
@@ -58,9 +59,12 @@ function App() {
         exact
         path="/animes/:id"
         render={({ match }) => (
-          <Player playSongById={playSongById} id={match.params.id} />
+          <Anime playSongById={playSongById} id={match.params.id} />
         )}
       />
+      <Route exact path="/search">
+        <Search playSongById={playSongById} />
+      </Route>
       <Video
         isExpanded={isExpanded}
         expand={expand}

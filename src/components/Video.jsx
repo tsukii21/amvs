@@ -80,7 +80,8 @@ function Video(props) {
                   }}
                   className="song-list-item"
                   style={{
-                    marginLeft: props.songIndex === index ? "-4vh" : "0vh",
+                    color:
+                      props.songIndex === index && "rgba(255, 255, 255, 0.2)",
                   }}
                 >
                   <h3>

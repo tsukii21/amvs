@@ -10,14 +10,9 @@ function Main(props) {
         slide={props.slide}
         active={props.active}
         shuffleList={props.shuffleList}
-        expand={props.expand}
       />
       <Animes />
-      <All
-        shuffleList={props.shuffleList}
-        expand={props.expand}
-        playSongById={props.playSongById}
-      />
+      <All shuffleList={props.shuffleList} playSongById={props.playSongById} />
     </div>
   );
 }

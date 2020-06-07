@@ -32,7 +32,6 @@ function All(props) {
       </div>
       <button
         onClick={() => {
-          props.expand();
           props.shuffleList();
         }}
         className="btn shuffle-btn"

@@ -5,7 +5,7 @@ import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 import { Link } from "react-router-dom";
 
-function Player({ id, playSongById }) {
+function Anime({ id, playSongById }) {
   const [videos, setVideos] = useState([songs]);
   const [anime, setAnime] = useState([animes]);
 
@@ -58,4 +58,4 @@ function Player({ id, playSongById }) {
   );
 }
 
-export default Player;
+export default Anime;
