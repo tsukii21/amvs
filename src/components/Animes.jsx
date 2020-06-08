@@ -1,6 +1,6 @@
 import React from "react";
-import animes from "../data/animes";
 import { Link } from "react-router-dom";
+import animes from "../data/animes";
 
 function Animes() {
   return (

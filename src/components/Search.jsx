@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import songs from "../data/songs";
 import animes from "../data/animes";
-import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 
 function Search(props) {
   const [query, setQuery] = useState("");
@@ -47,7 +47,7 @@ function Search(props) {
       </div>
       {results.length ? (
         <div className="songs-list-playlist">
-          {results.map((song, index) => {
+          {results.map((song) => {
             return (
               <div
                 onClick={() => {

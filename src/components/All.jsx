@@ -10,7 +10,7 @@ function All(props) {
       className="panel row"
     >
       <div className="songs-list-playlist">
-        {songs.map((song, index) => {
+        {songs.map((song) => {
           return (
             <div
               onClick={() => {

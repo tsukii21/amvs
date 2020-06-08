@@ -7,11 +7,13 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import QueueMusicIcon from "@material-ui/icons/QueueMusic";
 import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 
-function Video(props) {
+function Player(props) {
   const [playListState, setPlayListState] = useState(false);
-  function showPlayList() {
+
+  const showPlayList = () => {
     setPlayListState((prevValue) => !prevValue);
-  }
+  };
+
   const playNext = () => {
     props.setSongIndex((prevValue) => {
       if (prevValue === props.videos.length - 1) {
@@ -22,6 +24,7 @@ function Video(props) {
     });
     props.setAutoPlay(true);
   };
+
   const playPrevious = () => {
     props.setSongIndex((prevValue) => {
       if (prevValue === 0) {
@@ -37,6 +40,7 @@ function Video(props) {
     props.setSongIndex(index);
     if (!props.isAutoPlay) props.setAutoPlay(true);
   };
+
   return (
     <div>
       <div
@@ -130,4 +134,4 @@ function Video(props) {
   );
 }
 
-export default Video;
+export default Player;

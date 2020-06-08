@@ -6,11 +6,7 @@ import All from "./All";
 function Main(props) {
   return (
     <div className="row container-fluid panel-container">
-      <Home
-        slide={props.slide}
-        active={props.active}
-        shuffleList={props.shuffleList}
-      />
+      <Home active={props.active} shuffleList={props.shuffleList} />
       <Animes />
       <All shuffleList={props.shuffleList} playSongById={props.playSongById} />
     </div>

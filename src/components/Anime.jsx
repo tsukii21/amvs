@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import songs from "../data/songs";
-import animes from "../data/animes";
+import { Link } from "react-router-dom";
 import PlayArrowOutlinedIcon from "@material-ui/icons/PlayArrowOutlined";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
-import { Link } from "react-router-dom";
+import songs from "../data/songs";
+import animes from "../data/animes";
 
 function Anime({ id, playSongById }) {
   const [videos, setVideos] = useState([songs]);

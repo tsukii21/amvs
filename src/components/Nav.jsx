@@ -2,15 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Nav(props) {
-  function slideToHome() {
+  const slideToHome = () => {
     props.slide(1);
-  }
-  function slideToAnimes() {
+  };
+
+  const slideToAnimes = () => {
     props.slide(2);
-  }
-  function slideToAll() {
+  };
+  const slideToAll = () => {
     props.slide(3);
-  }
+  };
   return (
     <nav className="navbar navbar-dark fixed-top">
       <div

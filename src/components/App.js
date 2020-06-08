@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { shuffle } from "shufflr";
+import songs from "../data/songs";
 import Nav from "./Nav";
 import Main from "./Main";
 import Anime from "./Anime";
-import Video from "./Video";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import songs from "../data/songs";
-import { shuffle } from "shufflr";
+import Player from "./Player";
 import Search from "./Search";
 
 function App() {
@@ -24,15 +24,16 @@ function App() {
     setSongIndex(0);
     setAutoPlay(true);
   };
-  function expand() {
+
+  const expand = () => {
     setExpanded((prevValue) => !prevValue);
-  }
+  };
 
-  function slide(index) {
+  const slide = (index) => {
     setActive(index);
-  }
+  };
 
-  function playSongById(id) {
+  const playSongById = (id) => {
     videos.forEach((song, index) => {
       if (id === song.id) {
         setSongIndex(index);
@@ -40,17 +41,16 @@ function App() {
         return;
       }
     });
-  }
+  };
+
   return (
     <Router>
       <Route exact path="/">
         <div className="App">
           <Nav slide={slide} active={active} />
           <Main
-            slide={slide}
             active={active}
             shuffleList={shuffleList}
-            expand={expand}
             playSongById={playSongById}
           />
         </div>
@@ -65,7 +65,7 @@ function App() {
       <Route exact path="/search">
         <Search playSongById={playSongById} />
       </Route>
-      <Video
+      <Player
         isExpanded={isExpanded}
         expand={expand}
         songIndex={songIndex}
