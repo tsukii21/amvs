@@ -14,3 +14,11 @@ Similarly the videos folder must contain the music videos (with extension .mp4 o
 In the data folder, animes.js and songs.js have to be modified accordingly with relavant data. <br />
 <br />
 After doing all this, finally running ``` npm start ``` will launch the site at localhost:3000
+
+## ⚠ Contribution guidelines ⚠
+If you want to contribute to this project, please follow the below guidelines-
+* First of all, fork this project.
+* Make a new branch in your fork, push changes to it, and then open a PR to the main repo dev branch
+* You can also have your fork deployed, so that its easy to check your contributions
+
+That's all! And thank you for showing interest to this project.
