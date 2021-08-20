@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/38427014/130198752-81ad91de-1262-4946-ab0c-ea667a146688.png)
 # amvs
 A React anime music video player. <br />
 **Note: This project is unstable and doesn't work until some specific conditions are filled**
