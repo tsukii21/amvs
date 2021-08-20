@@ -15,6 +15,10 @@ In the data folder, animes.js and songs.js have to be modified accordingly with 
 <br />
 After doing all this, finally running ``` npm start ``` will launch the site at localhost:3000
 
+## Live site ✨✨  [![Netlify Status](https://api.netlify.com/api/v1/badges/2d8a55a0-f3b4-4c30-a107-f2cd382a662a/deploy-status)](https://app.netlify.com/sites/amvs/deploys)
+Check out this site LIVE @ https://amvs.netlify.app/ 
+* Note: videos are not hosted, so you can't do much here for now & its also not responsive. These features are under construction
+
 ## ⚠ Contribution guidelines ⚠
 If you want to contribute to this project, please follow the below guidelines-
 * First of all, fork this project.
